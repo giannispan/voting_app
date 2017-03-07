@@ -36,6 +36,21 @@ module.exports = function (app, passport) {
 			res.sendFile(path + '/public/profile.html');
 		});
 
+	app.route('/my_polls')
+		.get(isLoggedIn, function (req, res) {
+			res.sendFile(path + '/public/my_polls.html');
+		});
+
+	app.route('/create')
+		.get(isLoggedIn, function (req, res) {
+			res.sendFile(path + '/public/create.html');
+		});
+
+	app.route('/view_poll/:id')
+		.get(isLoggedIn, function (req, res) {
+			res.sendFile(path + '/public/view.html');
+		});
+
 	app.route('/api/:id')
 		.get(isLoggedIn, function (req, res) {
 			res.json(req.user.github);

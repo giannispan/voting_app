@@ -128,7 +128,7 @@ img {
 	font-size: 14px;
 	border-radius: 3px;
 	padding: 10px 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: 500;
 }
 
@@ -143,8 +143,8 @@ img {
 }
 
 .btn-delete {	/* Styling for delete button */
-	background-color: #ECEFF1;
-	color: #212121;
+	background-color: #f0a84e;
+	color: white;
 }
 
 #click-nbr {
