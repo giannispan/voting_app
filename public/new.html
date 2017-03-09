@@ -47,18 +47,36 @@
 	<body>
 	
 		<div class="container">
-			<!-- <p>You have clicked the button <span id="click-nbr"></span> times.</p>
-			<br />
-			<div class="btn-container">
-				<button type="submit" class="btn btn-add">CLICK ME!</button>
-				<button class="btn btn-delete">RESET</button>
-			</div> -->
-			<p>What is your favourite color?</p>
-			<br />
-			<div class="btn-container">
-				<button type="submit" class="btn btn-add">CREATE NEW POLL!</button>
-				<button class="btn btn-delete">VIEW MY POLLS</button>
-			</div>
+			<div class="page-header">
+	          <h1>Create New Poll</h1>
+	        </div>
+	        <form role="form">
+	          <div class="form-group">
+	            <label for="pollQuestion">Question</label>
+	            <input type="text" class="form-control" id="pollQuestion" placeholder="Enter poll question">
+	          </div>
+	          <div class="form-group" id="choices_container">
+	            <label>Choices</label>
+	            <div ng-repeat="choice in poll.choices">
+	              <input type="text" class="form-control" placeholder="Enter choice text"><br>
+	            </div>
+	          </div>    
+	          <div class="row">
+	            <div class="col-xs-12">
+	              <button type="button" class="btn btn-new"><span class="glyphicon glyphicon-plus"></span> Add another choice</button>
+	            </div>
+	          </div>
+	          <p><hr></p>
+	          <div class="row">
+	            <div class="col-xs-6">
+	              <a href="/" class="btn btn-delete" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to Home</a>
+	            </div>
+	            <div class="col-xs-6">
+	              <button class="btn btn-success pull-right" type="submit">SAVE POLL &raquo;</button>
+	            </div>
+	          </div>
+	          <p>&nbsp;</p>
+	        </form>
 		</div>
 
 		<script
@@ -69,9 +87,13 @@
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	  	</script>
 	  	<script src="/public/js/Chart.min.js"></script>
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
+	  	<script src="/public/js/custom.js"></script>
+	  	<script type="text/javascript" src="/common/ajax-functions.js"></script>
+	  	<script type="text/javascript" src="/controllers/userController.client.js"></script>
+
+		<!-- 
 		<script type="text/javascript" src="controllers/clickController.client.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
+		 -->
 
 		
 	</body>

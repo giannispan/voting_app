@@ -121,8 +121,6 @@ img {
 
 .btn {	/* Styling for buttons */
 	margin: 0 8px;
-	color: white;
-	background-color: #00BCD4;
 	display: inline-block;
 	border: 0;
 	font-size: 14px;
@@ -144,6 +142,11 @@ img {
 
 .btn-delete {	/* Styling for delete button */
 	background-color: #f0a84e;
+	color: white;
+}
+
+.btn-new {	/* Styling for new button */
+	background-color: #00BCD4;
 	color: white;
 }
 
