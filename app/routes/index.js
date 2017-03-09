@@ -36,17 +36,17 @@ module.exports = function (app, passport) {
 			res.sendFile(path + '/public/profile.html');
 		});
 
-	app.route('/my_polls')
+	app.route('/polls')
 		.get(isLoggedIn, function (req, res) {
-			res.sendFile(path + '/public/my_polls.html');
+			res.sendFile(path + '/public/polls.html');
 		});
 
-	app.route('/create')
+	app.route('/poll/create')
 		.get(isLoggedIn, function (req, res) {
-			res.sendFile(path + '/public/create.html');
+			res.sendFile(path + '/public/new.html');
 		});
 
-	app.route('/view_poll/:id')
+	app.route('/poll/:id')
 		.get(isLoggedIn, function (req, res) {
 			res.sendFile(path + '/public/view.html');
 		});

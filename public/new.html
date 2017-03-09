@@ -45,9 +45,6 @@
 	</header>
 
 	<body>
-		<div class="container">
-			<canvas id="myChart" width="256" height="100" style="display:block;"></canvas>
-		</div>
 	
 		<div class="container">
 			<!-- <p>You have clicked the button <span id="click-nbr"></span> times.</p>
@@ -76,35 +73,7 @@
 		<script type="text/javascript" src="controllers/clickController.client.js"></script>
 		<script type="text/javascript" src="controllers/userController.client.js"></script>
 
-		<script>
-		var ctx = document.getElementById("myChart");
-		var myChart = new Chart(ctx, {
-		    type: 'pie',
-		    data: {
-			    labels: [
-			        "Red",
-			        "Green",
-			        "Yellow"
-			    ],
-			    datasets: [
-			        {
-			            data: [10, 8, 7],
-			            backgroundColor: [
-			                "#b70000",
-			                "#004C00",
-			                "#ffff00"
-			            ],
-			            hoverBackgroundColor: [
-			                "#b70000",
-			                "#004C00",
-			                "#ffff00"
-			            ]
-			        }]
-			}
-		});
-		</script>
-
-
+		
 	</body>
 
 </html>
