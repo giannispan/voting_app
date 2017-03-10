@@ -57,13 +57,11 @@
 	          </div>
 	          <div class="form-group" id="choices_container">
 	            <label>Choices</label>
-	            <div ng-repeat="choice in poll.choices">
 	              <input type="text" class="form-control" placeholder="Enter choice text"><br>
-	            </div>
 	          </div>    
 	          <div class="row">
 	            <div class="col-xs-12">
-	              <button type="button" class="btn btn-new"><span class="glyphicon glyphicon-plus"></span> Add another choice</button>
+	              <button type="button" class="btn btn-new" onclick="addFields()"><span class="glyphicon glyphicon-plus"></span> Add another choice</button>
 	            </div>
 	          </div>
 	          <p><hr></p>

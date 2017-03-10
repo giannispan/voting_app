@@ -121,6 +121,8 @@ img {
 
 .btn {	/* Styling for buttons */
 	margin: 0 8px;
+	background-color: #00BCD4;
+	color: white;
 	display: inline-block;
 	border: 0;
 	font-size: 14px;
